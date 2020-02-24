@@ -1,0 +1,140 @@
+.header
+	position: relative
+	background-color: #0a0a0a
+
+	&__container
+		display: flex
+		align-items: center
+		padding-top: 20px
+		padding-bottom: 16px
+
+	&__small-logo
+		display: block
+		width: 95px
+
+	&__list
+		display: flex
+		justify-content: space-between
+		flex-grow: 1
+		margin: 0 28px
+
+		a
+			transition: 0.3s
+
+			&:hover
+				color: #f4d390
+
+	&__request-call
+		display: none
+	
+	&__phone-wrap
+		color: #f4d390
+
+		a
+			transition: 0.3s
+
+			&:hover
+				color: #fff
+
+	&__phone-link
+		font-size: 18px
+		font-weight: 700
+		display: flex
+		align-items: center
+
+	&__phone-circle
+		margin-right: 19px
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		background: linear-gradient(to top, #815f2e, #f2d18e)
+		display: flex
+		justify-content: center
+		align-items: center
+		color: #020102
+
+	&__toggle
+		display: none
+
++media-breakpoint-up(xl)
+	.header--main
+		position: absolute
+		width: 100%
+		z-index: 2
+		background: none
+
+		.header
+			&__container
+				padding-top: 10px
+				padding-bottom: 0
+				
+			&__logo
+				width: 248px
+
+			&__small-logo
+				display: none
+
+			&__list
+				margin-top: 10px
+
+			&__phone-wrap
+				display: flex
+				flex-direction: column
+				align-items: flex-end
+				align-self: flex-end
+				margin-bottom: 10px
+
+			&__phone-circle
+				display: none
+
+			&__request-call
+				display: block
+				margin-top: 10px
+				text-transform: uppercase
+				font-size: 14px
+				text-decoration: underline
+
++media-breakpoint-down(lg)
+	.header
+		position: relative
+
+		&__container
+			flex-wrap: wrap
+			justify-content: space-between
+
+		&__logo
+			display: none
+
+		&__list
+			display: none
+			padding: 15px 0
+			width: 100%
+			order: 1
+			margin: 0
+			text-align: right
+
+		&__item
+			margin-top: 10px
+
+		&__toggle
+			display: block
+			font-size: 24px
+			cursor: pointer
+
++media-breakpoint-down(xs)
+	.header
+
+		&__small-logo
+			width: 60px
+
+		&__phone-wrap
+			order: -1
+
+		&__phone-circle
+			margin-right: 0
+
+		&__phone-text
+			display: none
+
+		&__toggle
+			margin-left: 20px

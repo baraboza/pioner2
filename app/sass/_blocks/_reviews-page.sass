@@ -1,0 +1,83 @@
+.reviews-page
+	padding-top: 45px
+	padding-bottom: 34px
+	position: relative
+	overflow: hidden
+
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		transform: translate(-50%,0)
+		background-size: 100% 100%
+		width: 1920px
+		height: 1821px
+		top: -33px
+		background-image: url('../img/reviews-page-bg.png')
+		z-index: -1
+
+	&__list
+		margin-top: 10px
+
+	&__col
+		margin-top: 27px
+
+	&__item
+		background-image: linear-gradient(190deg, #171717, #0c0c0c)
+		box-shadow: 0 0 25px #000
+		padding: 28px 35px
+
+	&__link
+		display: flex
+		justify-content: center
+		align-items: center
+		background-image: linear-gradient(190deg, #171717, #0c0c0c)
+		box-shadow: 0 0 25px #000
+		padding: 17px 20px
+		position: relative
+		transition: opacity 0.3s
+
+		&::before
+			content: ''
+			position: absolute
+			width: 76px
+			height: 76px
+			background-image: url('../img/play.png')
+			background-size: 100% 100%
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+
+		&:hover
+			opacity: 0.6
+
+	&__item-title
+		margin-top: 28px
+		font-size: 15px
+		font-weight: 500
+		padding: 0 10px
+
++media-breakpoint-down(lg)
+	.reviews-page
+
+		&::before
+			display: none
+
++media-breakpoint-down(sm)
+	.reviews-page
+
+		&__list
+			margin-top: 0
+
+		&__col
+			margin-top: 15px
+
+		&__item
+			padding: 15px
+
+		&__link
+			padding: 15px
+
+			&::before
+				width: 50px
+				height: 50px

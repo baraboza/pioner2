@@ -1,0 +1,120 @@
+.timetable
+	margin-top: 112px
+
+	&__box
+		background-image: linear-gradient(190deg, #171717, #0c0c0c)
+		box-shadow: 0 0 25px #000
+		position: relative
+		display: flex
+		min-height: 367px
+
+	&__year
+		position: absolute
+		bottom: 31px
+		left: 70px
+		transform-origin: 0 100%
+		transform: rotate(-90deg)
+		text-transform: none
+
+	&__text-box
+		margin-left: 98px
+		border: 1px solid
+		border-image: linear-gradient(to bottom, #815f2e, #f2d18e) 1
+		width: 362px
+		height: 440px
+		margin-top: -37px
+		margin-bottom: -37px
+		padding: 90px 40px 0
+
+	&__title
+		margin-bottom: 55px
+
+	&__text
+		margin-top: 20px
+		font-size: 18px
+		line-height: 24px
+		font-weight: 300
+		max-width: 210px
+
+	&__list
+		flex-grow: 1
+		margin: 18px 17px 18px 35px
+		display: flex
+		flex-wrap: wrap
+		font-size: 24px
+		line-height: 27px
+
+	&__item
+		flex: 0 0 50%
+		padding: 14px 28px
+
+		&:nth-child(4n + 1), &:nth-child(4n + 2)
+			background-color: #0f0f0f
+
+.timetable--courses
+	margin-top: 60px
+	margin-bottom: 30px
+
++media-breakpoint-down(md)
+	.timetable
+
+		&__box
+			flex-direction: column
+			padding: 20px
+
+		&__year
+			display: none
+
+		&__text-box
+			margin: 0
+			padding: 0
+			border: none
+			width: auto
+			height: auto
+
+		&__title
+			margin-bottom: 30px
+
+			br
+				display: none
+
+		&__text
+			max-width: none
+
+		&__list
+			margin: 30px 0 0
+
+	.timetable--courses
+		margin-top: 20px
+
++media-breakpoint-down(sm)
+	.timetable
+
+		&__list
+			font-size: 18px
+			line-height: 22px
+
+
++media-breakpoint-down(xs)
+	.timetable
+		margin-top: 80px
+
+		&__title
+			margin-bottom: 20px
+
+		&__text
+			margin-top: 10px
+
+		&__list
+			margin-top: 20px
+
+		&__item
+			flex: 0 0 100%
+			background: none !important
+			padding: 10px 20px
+
+			&:nth-child(2n + 1)
+				background-color: #0f0f0f !important
+
+	.timetable--courses
+		margin-top: 20px

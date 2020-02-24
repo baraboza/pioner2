@@ -1,0 +1,84 @@
+.init
+	height: 800px
+	position: relative
+
+	&__video
+		position: absolute
+		width: 100%
+		height: 100%
+
+		img, video, iframe
+			width: 100%
+			height: 100%
+			object-fit: cover
+
+	&__container
+		position: relative
+		padding-top: 370px
+		height: 100%
+		z-index: 1
+
+	&__text
+		max-width: 570px
+		font-size: 40px
+		font-weight: 300
+		line-height: 50px
+
+	&__button
+		margin-top: 55px
+		width: 225px
+
+	&__social-list
+		position: absolute
+		right: 15px
+		top: 120px
+		bottom: 0
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+		&::before, &::after
+			content: ''
+			width: 2px
+
+		&::before
+			background-image: linear-gradient(to bottom, #0c0c0c, #ffde9a)
+			margin-bottom: 15px
+			flex: 0 0 212px
+
+		&::after
+			background-image: linear-gradient(to top, #0c0c0c, #ffde9a)
+			margin-top: 15px
+			flex-grow: 1
+
+	&__social-item
+		margin-top: 15px
+		margin-bottom: 15px
+
+		a
+			transition: opacity 0.3s
+			
+			&:hover
+				opacity: 0.6
+
++media-breakpoint-down(sm)
+	.init
+		height: auto
+
+		&__video
+			display: none
+
+		&__container
+			padding-top: 60px
+			padding-bottom: 70px
+
+		&__text
+			font-size: 26px
+			line-height: 32px
+
+		&__social-list
+			display: none
+
+		&__button
+			margin-top: 30px

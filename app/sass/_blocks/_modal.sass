@@ -1,0 +1,124 @@
+.modal
+	width: 360px
+	background-image: linear-gradient(190deg, #171717, #0c0c0c)
+	box-shadow: 0 0 25px #000
+	padding: 45px 35px 35px
+	position: relative
+
+	&::before, &::after
+		content: ''
+		width: 303px
+		height: 441px
+		position: absolute
+		background: rgba(12,12,12,0.72)
+		border: 1px solid
+		border-image: linear-gradient(to bottom, #815f2e, #f2d18e) 1
+		z-index: -1
+
+	&::before
+		right: -35px
+		top: -35px
+
+	&::after
+		left: -35px
+		bottom: -35px
+
+	&__close
+		position: absolute
+		right: 16px
+		top: 16px
+		width: 30px
+		height: 30px
+		border-radius: 50%
+		border: 1px solid #b19159
+		background: none
+		color: #f4d390
+		font-size: 18px
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 0
+		transition: 0.3s
+		flex-shrink: 0
+		transform: rotate(45deg)
+
+		span
+			margin-top: 3px
+
+		&:hover
+			box-shadow: 0 0 15px #815f2e
+			
+
+	&__title
+		text-transform: uppercase
+		text-align: center
+		letter-spacing: 0.075em
+		padding-bottom: 40px
+		position: relative
+		margin-bottom: 40px
+
+		&::after
+			position: absolute
+			content: ''
+			background: linear-gradient(to right, #0c0c0c, #ffde9a, #0c0c0c)
+			left: 0
+			right: 0
+			bottom: 0
+			height: 1px
+
+	&__input
+		line-height: 1
+		padding: 0 3px 15px
+		background: none
+		border: none
+		border-bottom: 1px solid #584e39
+		width: 100%
+		font-size: 15px
+		font-weight: 300
+		margin-bottom: 45px
+
+		&::placeholder
+			color: inherit
+
+	&__submit-button
+		width: 100%
+
+	&__consent-wrap
+		margin-top: 35px
+		opacity: 0.3
+		text-align: center
+
+		.wpcf7-acceptance 
+	
+			label
+
+				input
+					display: none
+
+					&:checked + span::before
+						background-image: url('../img/check.png')
+						background-position: center
+						background-repeat: no-repeat
+
+				span
+					display: inline-flex
+					align-items: center
+					cursor: pointer
+					font-size: 12px
+					color: #f4d390
+
+					&::before
+						content: ''
+						width: 15px
+						height: 15px
+						border: 1px solid #524834
+						margin-right: 8px
+						flex-shrink: 0
+
++media-breakpoint-down(xs)
+	.modal
+		width: 100%
+		max-width: 320px
+
+		&::before, &::after
+			display: none

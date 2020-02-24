@@ -1,0 +1,255 @@
+.training
+	position: relative
+
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		transform: translate(-50%,0)
+		background-size: 100% 100%
+		min-width: 100%
+		width: 1920px
+		height: 1463px
+		top: -150px
+		background-image: url('../img/training-bg.png')
+		z-index: -1
+
+	&__note
+		margin-top: 35px
+		font-size: 15px
+		line-height: 20px
+		font-weight: 300
+
+	&__table-wrap
+		margin-top: 22px
+		position: relative
+
+	&__bg
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		display: flex
+
+	&__bg-col
+		background-image: linear-gradient(190deg, #171717, #0c0c0c)
+		box-shadow: 0 0 25px #000
+
+		&:nth-child(1)
+			flex: 0 0 264px
+
+		&:nth-child(n + 2)
+			margin-left: 10px
+			flex: 0 0 209px
+
+	&__table
+		position: relative
+		width: 100%
+
+		tr
+
+			&:nth-last-child(n + 3)
+
+				td
+					border-bottom: 1px solid #0c0c0c
+
+			&:last-child
+
+				td
+					padding-top: 0
+					padding-bottom: 0
+
+					&:first-child
+						position: relative
+
+						&::before
+							content: ''
+							position: absolute
+							top: 0
+							right: 21px
+							left: 21px
+							height: 1px
+							background: linear-gradient(to right, #0c0c0c, #ffde9a, #0c0c0c)
+
+			&:nth-last-child(2)
+
+				td
+					padding-bottom: 15px
+
+		th, td
+			vertical-align: middle
+
+			&:nth-child(1)
+				width: 264px
+				max-width: 264px
+				padding-left: 24px
+				padding-right: 12px
+
+			&:nth-child(n + 2)
+				text-align: center
+				width: 219px
+				max-width: 219px
+				padding-left: 20px
+				padding-right: 10px
+				text-transform: uppercase
+
+		th
+			height: 65px
+			vertical-align: middle
+			font-size: 17px
+			color: #f4d390
+
+			&:nth-child(n + 2)
+				position: relative
+
+				&::after
+					content: ''
+					position: absolute
+					bottom: 0
+					right: 6px
+					left: 16px
+					height: 1px
+					background: linear-gradient(to right, #0c0c0c, #ffde9a, #0c0c0c)
+
+
+		td
+			padding-top: 8px
+			padding-bottom: 8px
+			
+			&:nth-child(1)
+				font-weight: 300
+				font-size: 15px
+				line-height: 20px
+
+			&:nth-child(n + 2)
+				font-size: 18px
+				line-height: 24px
+
+	&__button
+		margin: 0 auto 17px
+		width: 157px
+		height: 47px
+
+	&__mobile-slider
+		display: none
+
++media-breakpoint-down(lg)
+	.training
+
+		&::before
+			display: none
+
+		&__bg-col
+
+			&:nth-child(1)
+				flex: 0 0 178.4px
+
+			&:nth-child(n + 2)
+				margin-left: 5px
+				flex: 0 0 181.4px
+
+			&:nth-child(5)
+				flex: 0 0 187px
+
+		&__table
+			
+			th, td
+				padding-left: 15px
+
+				&:first-child
+					padding-left: 15px
+
++media-breakpoint-down(md)
+	.training
+
+		&__table-wrap
+			display: none
+
+		&__mobile-slider
+			display: block
+			background-image: linear-gradient(190deg, #171717, #0c0c0c)
+			box-shadow: 0 0 25px #000
+			position: relative
+			margin-top: 20px
+
+		&__mobile-title
+			font-size: 17px
+			color: #f4d390
+			height: 65px
+			display: flex
+			align-items: center
+			justify-content: center
+			text-transform: uppercase
+
+		&__mobile-item
+			padding-bottom: 34px
+
+		&__mobile-table
+			position: relative
+			width: 100%
+			margin-top: 20px
+			margin-bottom: 10px
+
+			&::before, &::after
+				content: ''
+				position: absolute
+				width: 196px
+				height: 1px
+				left: 50%
+				margin-left: -98px
+				background: linear-gradient(to right, #0c0c0c, #ffde9a, #0c0c0c)
+
+			&::before
+				top: -20px
+
+			&::after
+				bottom: -10px
+
+			tr:not(:first-child)
+
+				td
+					border-top: 1px solid #0c0c0c
+
+			td
+				padding: 8px 15px
+
+				&:first-child
+					font-weight: 300
+					font-size: 15px
+					line-height: 20px
+
+				&:nth-child(2)
+					font-size: 18px
+					line-height: 24px
+					text-transform: uppercase
+					text-align: center
+
+		&__mobile-button
+			margin: 24px auto 0
+			width: 157px
+			height: 47px
+
+		&__mobile-prev, &__mobile-next
+			position: absolute
+			top: 30px
+			background: none
+			border: none
+			padding: 0
+			width: 28px
+			height: 11px
+			background-size: 100% 100%
+
+		&__mobile-prev
+			left: 15px
+			background-image: url('../img/arrow-left.png')
+
+		&__mobile-next
+			right: 15px
+			background-image: url('../img/arrow-right.png')
+
++media-breakpoint-down(sm)
+	.training
+
+		&__note
+			margin-top: 10px

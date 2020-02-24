@@ -1,0 +1,90 @@
+.about
+	padding-top: 45px
+	position: relative
+	z-index: 1
+
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: -30px
+		min-width: 100%
+		width: 1920px
+		height: 1026px
+		transform: translate(-50%,0)
+		background-image: url('../img/about-bg.png')
+		background-size: 100% 100%
+		z-index: -1
+
+	&__text
+		margin-top: 45px
+		background-image: linear-gradient(190deg, #171717, #0c0c0c)
+		box-shadow: 0 0 25px #000
+		padding: 50px 54px 60px 44px
+		max-width: 557px
+		line-height: 24px
+		font-weight: 300
+
+		p
+			margin-bottom: 25px
+
+			&:last-child
+				margin-bottom: 0
+
+	&__number-list
+		display: flex
+		margin-top: 45px
+
+	&__number-item
+		padding: 0 40px
+
+	&__number-title
+		color: #f4d390
+		font-size: 40px
+		font-weight: 300
+		
+		span
+			font-size: 100px
+			font-weight: 200
+			vertical-align: middle
+
+	&__number-text
+		margin-top: 10px
+		font-size: 18px
+		line-height: 24px
+		font-weight: 300
+
++media-breakpoint-down(md)
+	.about
+
+		&::before
+			display: none
+
+		&__text
+			max-width: none
+
+		&__number-list
+			justify-content: center
+
++media-breakpoint-down(sm)
+	.about
+
+		&__text
+			margin-top: 30px
+			padding: 20px
+
+		&__number-list
+			flex-direction: column
+			align-items: center
+			text-align: center
+			margin-top: 0
+
+		&__number-item
+			padding: 0
+			margin-top: 30px
+
+		&__number-title
+			font-size: 26px
+
+			span
+				font-size: 60px

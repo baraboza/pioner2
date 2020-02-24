@@ -1,0 +1,278 @@
+.learn-info
+	margin-bottom: 45px
+
+	&__title
+		font-size: 40px
+		font-weight: 300
+
+	&__box
+		background-image: linear-gradient(190deg, #171717, #0c0c0c)
+		box-shadow: 0 0 25px #000
+		padding: 32px 45px 65px
+
+	&__head
+		display: flex
+
+	&__head-left
+		flex-grow: 1
+
+	&__head-list
+		margin-top: 30px
+		padding-left: 22px
+		font-size: 24px
+		line-height: 30px
+
+	&__head-item
+		margin-top: 25px
+		font-weight: 300
+
+		&:first-child
+			margin-top: 0
+
+		b
+			font-weight: 500
+			color: #f4d390
+
+	&__head-right
+		width: 570px
+		margin-right: 5px
+		margin-top: 43px
+		position: relative
+		margin-left: 40px
+
+		&::before, &::after
+			content: ''
+			position: absolute
+			height: 119px
+			border: 1px solid
+			border-image: linear-gradient(to bottom, #815f2e, #f2d18e) 1
+
+		&::before
+			width: 421px
+			top: -39px
+			right: -28px
+
+		&::after
+			width: 552px
+			left: -33px
+			bottom: -32px
+
+	&__head-right-inner
+		background-image: linear-gradient(190deg, #171717, #0c0c0c)
+		box-shadow: 0 0 25px #000
+		padding: 55px 70px 55px 60px
+		position: relative
+		z-index: 1
+		font-size: 18px
+		font-weight: 300
+		line-height: 24px
+
+	&__program-title
+		margin-top: 100px
+
+		span
+			color: #f4d390
+
+	&__program-list
+		margin-top: 55px
+		display: flex
+
+	&__program-item
+		display: flex
+		align-items: center
+		justify-content: center
+		font-size: 18px
+		line-height: 30px
+		padding: 10px 22px
+		min-width: 195px
+		border: 1px solid
+		border-image: linear-gradient(to bottom, #815f2e, #f2d18e) 1
+		text-align: center
+		color: #f4d390
+		text-transform: uppercase
+		margin-right: 95px
+		position: relative
+
+		&::after
+			content: ''
+			position: absolute
+			top: 50%
+			margin-top: -5px
+			right: -62px
+			width: 28px
+			height: 11px
+			background-size: 100% 100%
+			background-image: url('../img/arrow-right.png')
+
+		&:last-child
+			margin-right: 0
+
+			&::after
+				display: none
+
+	&__theory-title
+		margin-top: 55px
+
+	&__theory-list
+		display: flex
+		margin: 15px -15px 0
+		flex-wrap: wrap
+
+	&__theory-item
+		flex: 0 0 50%
+		max-width: 50%
+		padding: 0 15px
+		margin-top: 10px
+
+	&__theory-subtitle
+		display: flex
+		align-items: center
+		justify-content: space-between
+		min-height: 100px
+		padding: 20px 20px 20px 35px
+		font-size: 17px
+		line-height: 24px
+		background-image: linear-gradient(190deg, #171717, #0c0c0c)
+		box-shadow: 0 0 25px #000
+
+	&__theory-toggle
+		margin-left: 20px
+		width: 30px
+		height: 30px
+		border-radius: 50%
+		border: 1px solid #b19159
+		background: none
+		color: #f4d390
+		font-size: 18px
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 0
+		transition: 0.3s
+		flex-shrink: 0
+
+		span
+			margin-top: 3px
+
+		&:hover
+			box-shadow: 0 0 15px #815f2e
+		
+		&.active
+			transform: rotate(45deg)
+
+	&__theory-desc
+		display: none
+		font-weight: 300
+		background-image: linear-gradient(190deg, #171717, #0c0c0c)
+		box-shadow: 0 0 25px #000
+		padding: 20px 20px 20px 35px
+
+	&__present
+		margin-top: 60px
+		font-size: 22px
+		line-height: 30px
+		text-align: center
+		font-weight: 300
+
+		b
+			font-weight: 500
+			color: #f4d390
+
+	&__download-plan
+		margin: 40px auto 0
+		width: 518px
+
++media-breakpoint-down(lg)
+	.learn-info
+
+		&__head-right
+			
+			&::before, &::after
+				width: 300px
+
++media-breakpoint-down(md)
+	.learn-info
+
+		&__head
+			flex-direction: column
+
+		&__head-right
+			margin: 30px 0 0
+			width: 100%
+
+			&::before, &::after
+				display: none
+
+		&__head-right-inner
+			padding: 30px
+
+		&__program-list
+			flex-direction: column
+			margin-top: 20px
+
+		&__program-item
+			margin-right: 0
+			margin-top: 10px
+
+			&::after
+				display: none
+
++media-breakpoint-down(sm)
+	.learn-info
+		
+		&__title
+			font-size: 26px
+
+		&__box
+			padding: 30px 20px
+
+		&__head-list
+			font-size: 18px
+			line-height: 24px
+			padding-left: 0
+			margin-top: 15px
+
+		&__head-item
+			margin-top: 15px
+
+		&__head-right-inner
+			font-size: 16px
+			padding: 20px
+
+		&__program-title
+			margin-top: 40px
+
+		&__program-list
+			margin-top: 10px
+
+		&__program-item
+			font-size: 16px
+			line-height: 20px
+
+		&__theory-title
+			margin-top: 30px
+
+		&__theory-list
+			margin-top: 10px
+
+		&__theory-item
+			flex: 0 0 100%
+			max-width: none
+
+		&__theory-subtitle
+			min-height: 0
+
+		&__present
+			margin-top: 30px
+			font-size: 16px
+			line-height: 20px
+
+		&__download-plan
+			margin-top: 20px
+			width: 100%
+
++media-breakpoint-down(xs)
+	.learn-info
+
+
+

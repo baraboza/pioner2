@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<meta name="theme-color" content="#000">
+
+	<link rel="stylesheet" href="fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="header__container container">
+			<a href="#" class="header__logo">
+				<img src="img/logo.svg" alt="">
+			</a>
+			<a href="#" class="header__small-logo">
+				<img src="img/logo2.svg" alt="">
+			</a>
+			<ul class="header__list">
+				<li class="header__item">
+					<a href="#">О компании</a>
+				</li>
+				<li class="header__item">
+					<a href="#">Обучение</a>
+				</li>
+				<li class="header__item">
+					<a href="#">Преподаватели</a>
+				</li>
+				<li class="header__item">
+					<a href="#">FAQ</a>
+				</li>
+				<li class="header__item">
+					<a href="#">Отзывы</a>
+				</li>
+				<li class="header__item">
+					<a href="#">Новости</a>
+				</li>
+				<li class="header__item">
+					<a href="#">Контакты</a>
+				</li>
+			</ul>
+			<div class="header__phone-wrap">
+				<a href="tel:+79781433141" class="header__phone-link">
+					<span class="header__phone-circle"><i class="fas fa-phone"></i></span>
+					<span class="header__phone-text">+7 (978) 143 31 41</span>
+				</a>
+				<a href="#request-call" class="header__request-call js-modal-open">Заказать звонок</a>
+			</div>
+			<span class="header__toggle">
+				<i class="fas fa-bars"></i>
+			</span>
+		</div>
+	</header>
+
+	<main>
+
+		<div class="courses">
+			<div class="container">
+				<h1 class="courses__title h2">Курсы</h1>
+				<ul class="courses__tabs tabs">
+					<li class="courses__tabs-item"><a href="#tab1">Об обучении</a></li>
+					<li class="courses__tabs-item"><a href="#tab2">Расписание</a></li>
+					<li class="courses__tabs-item"><a href="#tab3">Условия приема</a></li>
+				</ul>
+			</div>
+			<div class="courses__content-wrap">
+				<div id="tab1" class="courses__content tab__content">
+					<section class="learn-info">
+						<div class="container">
+							<div class="learn-info__box">
+								<div class="learn-info__head">
+									<div class="learn-info__head-left">
+										<p class="learn-info__head-title learn-info__title">Об обучении</p>
+										<ul class="learn-info__head-list">
+											<li class="learn-info__head-item">
+												<b>Название программы:</b><br>
+												Сестринское дело в косметологии
+											</li>
+											<li class="learn-info__head-item">
+												<b>Продолжительность обучения:</b><br>
+												2 месяца
+											</li>
+										</ul>
+									</div>
+									<div class="learn-info__head-right">
+										<div class="learn-info__head-right-inner">
+											Данный курс позволит Вам освоить специальность 
+											косметолога и получить все знания и навыки, 
+											необходимые для успешной карьеры.
+										</div>
+									</div>
+								</div>
+								<p class="learn-info__program-title learn-info__title">Программа обучения состоит <span>из трех блоков</span></p>
+								<ol class="learn-info__program-list">
+									<li class="learn-info__program-item">теория</li>
+									<li class="learn-info__program-item">практика</li>
+									<li class="learn-info__program-item">онлайн-курс интернет маркетинга</li>
+								</ol>
+								<p class="learn-info__theory-title learn-info__title">Теория</p>
+								<ul class="learn-info__theory-list">
+									<li class="learn-info__theory-item">
+										<div class="learn-info__theory-subtitle">
+											<p class="learn-info__theory-subtitle-text">Строение кожи. Типы кожи.</p>
+											<button class="learn-info__theory-toggle">
+												<span>+</span>
+											</button>
+										</div>
+										<div class="learn-info__theory-desc">
+											<p>Описание</p>
+										</div>
+									</li>
+									<li class="learn-info__theory-item">
+										<div class="learn-info__theory-subtitle">
+											<p class="learn-info__theory-subtitle-text">Акне</p>
+											<button class="learn-info__theory-toggle">
+												<span>+</span>
+											</button>
+										</div>
+										<div class="learn-info__theory-desc">
+											<p>Описание</p>
+										</div>
+									</li>
+									<li class="learn-info__theory-item">
+										<div class="learn-info__theory-subtitle">
+											<p class="learn-info__theory-subtitle-text">Мышцы лица</p>
+											<button class="learn-info__theory-toggle">
+												<span>+</span>
+											</button>
+										</div>
+										<div class="learn-info__theory-desc">
+											<p>Описание</p>
+										</div>
+									</li>
+									<li class="learn-info__theory-item">
+										<div class="learn-info__theory-subtitle">
+											<p class="learn-info__theory-subtitle-text">Витилиго</p>
+											<button class="learn-info__theory-toggle">
+												<span>+</span>
+											</button>
+										</div>
+										<div class="learn-info__theory-desc">
+											<p>Описание</p>
+										</div>
+									</li>
+									<li class="learn-info__theory-item">
+										<div class="learn-info__theory-subtitle">
+											<p class="learn-info__theory-subtitle-text">Высыпные элементы</p>
+											<button class="learn-info__theory-toggle">
+												<span>+</span>
+											</button>
+										</div>
+										<div class="learn-info__theory-desc">
+											<p>Описание</p>
+										</div>
+									</li>
+									<li class="learn-info__theory-item">
+										<div class="learn-info__theory-subtitle">
+											<p class="learn-info__theory-subtitle-text">Крапивница</p>
+											<button class="learn-info__theory-toggle">
+												<span>+</span>
+											</button>
+										</div>
+										<div class="learn-info__theory-desc">
+											<p>Описание</p>
+										</div>
+									</li>
+									<li class="learn-info__theory-item">
+										<div class="learn-info__theory-subtitle">
+											<p class="learn-info__theory-subtitle-text">Грибковые заболевания кожи и ногтей</p>
+											<button class="learn-info__theory-toggle">
+												<span>+</span>
+											</button>
+										</div>
+										<div class="learn-info__theory-desc">
+											<p>Описание</p>
+										</div>
+									</li>
+									<li class="learn-info__theory-item">
+										<div class="learn-info__theory-subtitle">
+											<p class="learn-info__theory-subtitle-text">Атопический дерматит</p>
+											<button class="learn-info__theory-toggle">
+												<span>+</span>
+											</button>
+										</div>
+										<div class="learn-info__theory-desc">
+											<p>Описание</p>
+										</div>
+									</li>
+									<li class="learn-info__theory-item">
+										<div class="learn-info__theory-subtitle">
+											<p class="learn-info__theory-subtitle-text">Контактный дерматит</p>
+											<button class="learn-info__theory-toggle">
+												<span>+</span>
+											</button>
+										</div>
+										<div class="learn-info__theory-desc">
+											<p>Описание</p>
+										</div>
+									</li>
+									<li class="learn-info__theory-item">
+										<div class="learn-info__theory-subtitle">
+											<p class="learn-info__theory-subtitle-text">Себорейный дерматит</p>
+											<button class="learn-info__theory-toggle">
+												<span>+</span>
+											</button>
+										</div>
+										<div class="learn-info__theory-desc">
+											<p>Описание</p>
+										</div>
+									</li>
+									<li class="learn-info__theory-item">
+										<div class="learn-info__theory-subtitle">
+											<p class="learn-info__theory-subtitle-text">Псориаз</p>
+											<button class="learn-info__theory-toggle">
+												<span>+</span>
+											</button>
+										</div>
+										<div class="learn-info__theory-desc">
+											<p>Описание</p>
+										</div>
+									</li>
+									<li class="learn-info__theory-item">
+										<div class="learn-info__theory-subtitle">
+											<p class="learn-info__theory-subtitle-text">Розацеа</p>
+											<button class="learn-info__theory-toggle">
+												<span>+</span>
+											</button>
+										</div>
+										<div class="learn-info__theory-desc">
+											<p>Описание</p>
+										</div>
+									</li>
+									<li class="learn-info__theory-item">
+										<div class="learn-info__theory-subtitle">
+											<p class="learn-info__theory-subtitle-text">Неотложные состояния</p>
+											<button class="learn-info__theory-toggle">
+												<span>+</span>
+											</button>
+										</div>
+										<div class="learn-info__theory-desc">
+											<p>Описание</p>
+										</div>
+									</li>
+									<li class="learn-info__theory-item">
+										<div class="learn-info__theory-subtitle">
+											<p class="learn-info__theory-subtitle-text">Санитарно-эпидемиологические правила и нормы</p>
+										</div>
+									</li>
+									<li class="learn-info__theory-item">
+										<div class="learn-info__theory-subtitle">
+											<p class="learn-info__theory-subtitle-text">Подробное изучение и разбор составов косметических средств</p>
+										</div>
+									</li>
+									<li class="learn-info__theory-item">
+										<div class="learn-info__theory-subtitle">
+											<p class="learn-info__theory-subtitle-text">Косметология – как бизнес</p>
+										</div>
+									</li>
+								</ul>
+								<p class="learn-info__present"><b>В подарок:</b> «Онлайн курс интернет маркетинга»</p>
+								<a href="#" class="learn-info__download-plan button" target="_blank">Скачать полный учебный план в формате PDF</a>
+							</div>
+						</div>
+					</section>
+					<section class="training">
+						<div class="training__container container">
+							<p class="training__title h2">выберите подходящий<br> вариант обучения</p>
+							<p class="training__note">*Обучение только для лиц с медицинским образованием</p>
+							<div class="training__table-wrap">
+								<div class="training__bg">
+									<div class="training__bg-col"></div>
+									<div class="training__bg-col"></div>
+									<div class="training__bg-col"></div>
+									<div class="training__bg-col"></div>
+									<div class="training__bg-col"></div>
+								</div>
+								<table class="training__table">
+									<tr>
+										<th></th>
+										<th>Базовый</th>
+										<th>Стандарт</th>
+										<th>Профи</th>
+										<th>Индивидуально</th>
+									</tr>
+									<tr>
+										<td>Теоретические занятия (онлайн)</td>
+										<td>30 ак.ч.</td>
+										<td>30 ак.ч.</td>
+										<td>30 ак.ч.</td>
+										<td>30 ак.ч.</td>
+									</tr>
+									<tr>
+										<td>Практические занятия</td>
+										<td>-</td>
+										<td>30 ак.ч.</td>
+										<td>60 ак.ч.</td>
+										<td>60 ак.ч.</td>
+									</tr>
+									<tr>
+										<td>Диплом государственного<br> образца</td>
+										<td>+</td>
+										<td>+</td>
+										<td>+</td>
+										<td>+</td>
+									</tr>
+									<tr>
+										<td>Халат для работы (подарок)</td>
+										<td>-</td>
+										<td>+</td>
+										<td>+</td>
+										<td>+</td>
+									</tr>
+									<tr>
+										<td>Профессиональные<br> косметические средства</td>
+										<td>-</td>
+										<td>+</td>
+										<td>+</td>
+										<td>+</td>
+									</tr>
+									<tr>
+										<td>Расходные материалы</td>
+										<td>-</td>
+										<td>+</td>
+										<td>+</td>
+										<td>+</td>
+									</tr>
+									<tr>
+										<td>Методические материалы</td>
+										<td>+</td>
+										<td>+</td>
+										<td>+</td>
+										<td>+</td>
+									</tr>
+									<tr>
+										<td>База моделей</td>
+										<td>-</td>
+										<td>+</td>
+										<td>+</td>
+										<td>+</td>
+									</tr>
+									<tr>
+										<td>Обучение сервису</td>
+										<td>-</td>
+										<td>+</td>
+										<td>+</td>
+										<td>+</td>
+									</tr>
+									<tr>
+										<td>Курс онлайн маркетинга<br> + 2 месяца</td>
+										<td>-</td>
+										<td>+</td>
+										<td>+</td>
+										<td>+</td>
+									</tr>
+									<tr>
+										<td>«Золотой диплом»<br> TM CHRISTINA</td>
+										<td>-</td>
+										<td>+</td>
+										<td>+</td>
+										<td>+</td>
+									</tr>
+									<tr>
+										<td>Диплом об обучении пилингу<br> Rose de Mer</td>
+										<td>-</td>
+										<td>+</td>
+										<td>+</td>
+										<td>+</td>
+									</tr>
+									<tr>
+										<td>Скидка 35% на TM CHRISTINA</td>
+										<td>+</td>
+										<td>+</td>
+										<td>+</td>
+										<td>+</td>
+									</tr>
+									<tr>
+										<td>Индивидуальные занятия<br> с преподавателем</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>+</td>
+									</tr>
+									<tr>
+										<td>Стоимость</td>
+										<td><a href="#" class="training__button button">Подробнее</a></td>
+										<td><a href="#" class="training__button button">Подробнее</a></td>
+										<td><a href="#" class="training__button button">Подробнее</a></td>
+										<td><a href="#" class="training__button button">Подробнее</a></td>
+									</tr>
+								</table>
+							</div>
+							<div class="training__mobile-slider">
+								<ul class="training__mobile-list">
+									<li class="training__mobile-item">
+										<p class="training__mobile-title">Базовый</p>
+										<table class="training__mobile-table">
+											<tr>
+												<td>Теоретические занятия (онлайн)</td>
+												<td>30 ак.ч.</td>
+											</tr>
+											<tr>
+												<td>Практические занятия</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>Диплом государственного<br> образца</td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Халат для работы (подарок) </td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>Профессиональные<br> косметические средства </td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>Расходные материалы </td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>Методические материалы</td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>База моделей</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>Обучение сервису</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>Курс онлайн маркетинга<br> + 2 месяца</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>«Золотой диплом»<br> TM CHRISTINA</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>Диплом об обучении пилингу<br> Rose de Mer</td>
+												<td>-</td>
+											</tr>
+											<tr>
+												<td>Скидка 35% на TM CHRISTINA </td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Индивидуальные занятия<br> с преподавателем</td>
+												<td>-</td>
+											</tr>
+										</table>
+										<a href="#" class="training__mobile-button button">Подробнее</a>
+									</li>
+									<li class="training__mobile-item">
+										<p class="training__mobile-title">Стандарт</p>
+										<table class="training__mobile-table">
+											<tr>
+												<td>Теоретические занятия (онлайн)</td>
+												<td>30 ак.ч.</td>
+											</tr>
+											<tr>
+												<td>Практические занятия</td>
+												<td>30 ак.ч.</td>
+											</tr>
+											<tr>
+												<td>Диплом государственного<br> образца</td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Халат для работы (подарок) </td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Профессиональные<br> косметические средства </td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Расходные материалы </td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Методические материалы</td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>База моделей</td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Обучение сервису</td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Курс онлайн маркетинга<br> + 2 месяца</td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>«Золотой диплом»<br> TM CHRISTINA</td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Диплом об обучении пилингу<br> Rose de Mer</td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Скидка 35% на TM CHRISTINA </td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Индивидуальные занятия<br> с преподавателем</td>
+												<td>-</td>
+											</tr>
+										</table>
+										<a href="#" class="training__mobile-button button">Подробнее</a>
+									</li>
+									<li class="training__mobile-item">
+										<p class="training__mobile-title">Профи</p>
+										<table class="training__mobile-table">
+											<tr>
+												<td>Теоретические занятия (онлайн)</td>
+												<td>30 ак.ч.</td>
+											</tr>
+											<tr>
+												<td>Практические занятия</td>
+												<td>60 ак.ч.</td>
+											</tr>
+											<tr>
+												<td>Диплом государственного<br> образца</td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Халат для работы (подарок) </td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Профессиональные<br> косметические средства </td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Расходные материалы </td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Методические материалы</td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>База моделей</td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Обучение сервису</td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Курс онлайн маркетинга<br> + 2 месяца</td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>«Золотой диплом»<br> TM CHRISTINA</td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Диплом об обучении пилингу<br> Rose de Mer</td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Скидка 35% на TM CHRISTINA </td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Индивидуальные занятия<br> с преподавателем</td>
+												<td>-</td>
+											</tr>
+										</table>
+										<a href="#" class="training__mobile-button button">Подробнее</a>
+									</li>
+									<li class="training__mobile-item">
+										<p class="training__mobile-title">Индивидуально</p>
+										<table class="training__mobile-table">
+											<tr>
+												<td>Теоретические занятия (онлайн)</td>
+												<td>30 ак.ч.</td>
+											</tr>
+											<tr>
+												<td>Практические занятия</td>
+												<td>60 ак.ч.</td>
+											</tr>
+											<tr>
+												<td>Диплом государственного<br> образца</td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Халат для работы (подарок) </td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Профессиональные<br> косметические средства </td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Расходные материалы </td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Методические материалы</td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>База моделей</td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Обучение сервису</td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Курс онлайн маркетинга<br> + 2 месяца</td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>«Золотой диплом»<br> TM CHRISTINA</td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Диплом об обучении пилингу<br> Rose de Mer</td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Скидка 35% на TM CHRISTINA </td>
+												<td>+</td>
+											</tr>
+											<tr>
+												<td>Индивидуальные занятия<br> с преподавателем</td>
+												<td>+</td>
+											</tr>
+										</table>
+										<a href="#" class="training__mobile-button button">Подробнее</a>
+									</li>
+								</ul>
+								<button class="training__mobile-prev"></button>
+								<button class="training__mobile-next"></button>
+							</div>
+						</div>
+					</section>
+					<div class="container">
+						<div class="courses__diplom">
+							<img src="img/courses-diplom.png" alt="">
+							<p class="courses__diplom-text">По окончанию обучения студенты защищают <span>дипломную работу</span> и получают диплом и сертификат по специальности <span>«Сестринское дело в косметологии»</span></p>
+						</div>
+					</div>
+				</div>
+				<div id="tab2" class="courses__content tab__content">
+					<section class="timetable timetable--courses">
+						<div class="timetable__container container">
+							<div class="timetable__box">
+								<p class="timetable__year h2">2020 - 2021 год</p>
+								<div class="timetable__text-box">
+									<p class="timetable__title h2">Расписание<br> занятий</p>
+									<p class="timetable__text">Есть утренние, дневные и вечерние группы<p>
+									<p class="timetable__text">В практической группе 4 человека</p>
+								</div>
+								<ul class="timetable__list">
+									<li class="timetable__item">6 мая 2020 г.</li>
+									<li class="timetable__item">30 июня 2020 г.</li>
+									<li class="timetable__item">1 июля 2020 г.</li>
+									<li class="timetable__item">31 августа 2020 г.</li>
+									<li class="timetable__item">1 сентября 2020 г.</li>
+									<li class="timetable__item">30 октября 2020 г.</li>
+									<li class="timetable__item">2 ноября 2020 г.</li>
+									<li class="timetable__item">20 декабря 2020 г.</li>
+									<li class="timetable__item">11 января 2021 г.</li>
+									<li class="timetable__item">26 февраля 2021 г.</li>
+									<li class="timetable__item">1 марта 2021 г.</li>
+									<li class="timetable__item">30 апреля 2021 г.</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div id="tab3" class="courses__content tab__content">
+					<div class="container">
+						<section class="conditions">
+							<div class="conditions__text">
+								<h2>Условия приёма</h2>
+								<h3>Документы для заключения договора:</h3>
+								<ul>
+									<li>Паспорт</li>
+									<li>Диплом о медицинском образовании</li>
+									<li>Документ о смене фамилии (в случае несоответствия фамилии в дипломе и паспорте)</li>
+									<li>Перевод диплома на русский язык нотариально заверенный</li>
+								</ul>
+							</div>
+							<form class="conditions__form form">
+								<div class="form__inner">
+									<p class="form__title">Получить консультацию</p>
+									<input type="text" class="form__input" placeholder="Ваше имя">
+									<input type="tel" class="form__input" placeholder="+7 (___) ___-__-__">
+									<textarea class="form__textarea" placeholder="Сообщение" rows="1"></textarea>
+									<input type="submit" class="form__submit-button button" value="Отправить">
+									<div class="form__consent-wrap">
+										<span class="wpcf7-form-control-wrap your-consent"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="your-consent" value="1" aria-invalid="false" checked="checked"><span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span></label></span></span></span>
+									</div>
+								</div>
+							</form>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<footer class="footer footer--page">
+		<div class="footer__page">
+			<div class="footer__page-container container">
+				<div class="footer__page-info">
+					<a href="#" class="footer__logo">
+						<img src="img/logo.svg" alt="">
+					</a>
+					<div class="footer__text">
+						г. Симферополь,<br> ул. Куйбышева, 58 д<br>
+						<br>
+						<a href="tel:+79781433141">+7 (978) 143 31 41</a>
+					</div>
+					<ul class="footer__social-list">
+						<li class="footer__social-item">
+							<a href="#" target="_blank" rel="nofollow"><i class="fab fa-instagram"></i></a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#" target="_blank" rel="nofollow"><i class="fab fa-vk"></i></a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#" target="_blank" rel="nofollow"><i class="fab fa-facebook-f"></i></a>
+						</li>
+					</ul>
+				</div>         
+				<div class="footer__page-row">
+					<div class="footer__page-col">
+						<p class="footer__page-item">
+							<a href="#">О компании</a>
+						</p>
+						<p class="footer__page-item">
+							<a href="#">Обучение</a>
+						</p>
+						<p class="footer__page-item">
+							<a href="#">Преподаватели</a>
+						</p>
+						<p class="footer__page-item">
+							<a href="#">FAQ</a>
+						</p>
+					</div>
+					<div class="footer__page-col">
+						<p class="footer__page-item">
+							<a href="#">Отзывы</a>
+						</p>
+						<p class="footer__page-item">
+							<a href="#">Новости</a>
+						</p>
+						<p class="footer__page-item">
+							<a href="#">Контакты</a>
+						</p>
+					</div>
+					<div class="footer__page-col footer__page-col--city">
+						<p class="footer__page-item">
+							<a href="#">Симферополь</a>
+						</p>
+						<p class="footer__page-item">
+							<a href="#">Краснодар</a>
+						</p>
+						<p class="footer__page-item">
+							<a href="#">Ростов-на-Дону</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6">г. Симферополь © Copyright  2020 г.</div>
+					<div class="col-md-6"><p class="footer__madein">Сделано в <a href="#" target="_blank" rel="nofollow"><img src="img/sheer.png" alt=""></a></p></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div id="request-call" class="modal-wrapper">
+		<div class="modal-wrapper__container">
+			<div class="modal">
+				<button class="modal__close">
+					<span>+</span>
+				</button>
+				<p class="modal__title">Заказать звонок</p>
+				<input type="text" class="modal__input" placeholder="Ваше имя">
+				<input type="tel" class="modal__input" placeholder="+7 (___) ___-__-__">
+				<input type="submit" class="modal__submit-button button" value="Отправить">
+				<div class="modal__consent-wrap">
+					<span class="wpcf7-form-control-wrap your-consent"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="your-consent" value="1" aria-invalid="false" checked="checked"><span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span></label></span></span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+</html>

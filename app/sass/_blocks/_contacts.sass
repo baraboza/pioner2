@@ -1,0 +1,43 @@
+.contacts
+	margin-bottom: 0
+
+	&__city-title
+		font-size: 18px
+		text-transform: uppercase
+		transition: color 0.3s
+
+	&__city-info
+		padding: 32px 35px
+		font-size: 18px
+		line-height: normal
+
+		a:hover
+			text-decoration: underline
+
+	&__item
+		margin-top: 30px
+
+		&.active .contacts__city-title
+			color: #f4d390
+
+	&__map
+		margin-top: 65px
+		height: 530px
+
+		canvas
+			filter: saturate(1000%)grayscale(1) brightness(0.25)
+
+	.faq__form
+		padding-top: 30px
+
+	.faq__form-title
+		padding-bottom: 30px
+
+	.faq__textarea
+		margin-bottom: 32px
+
++media-breakpoint-down(sm)
+	.contacts
+
+		&__map
+			height: 300px

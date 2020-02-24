@@ -1,0 +1,93 @@
+.form
+	position: relative
+	
+	&::before
+		content: ''
+		position: absolute
+		top: -35px
+		right: -30px
+		width: 303px
+		height: 488px
+		border: 1px solid
+		border-image: linear-gradient(to bottom, #815f2e, #f2d18e) 1
+
+	&__inner
+		background-image: linear-gradient(190deg, #171717, #0c0c0c)
+		padding: 45px 35px 30px
+		box-shadow: 0 0 25px #000
+		position: relative
+
+	&__title
+		text-transform: uppercase
+		letter-spacing: 0.075em
+		text-align: center
+		padding-bottom: 38px
+		position: relative
+		margin-bottom: 40px
+
+		&::after
+			content: ''
+			position: absolute
+			bottom: 0
+			width: 100%
+			left: 0
+			height: 1px
+			background: linear-gradient(to right, #0c0c0c, #ffde9a, #0c0c0c)
+
+	&__input, &__textarea
+		line-height: 1
+		padding: 0 3px 15px
+		background: none
+		border: none
+		border-bottom: 1px solid #584e39
+		width: 100%
+		font-size: 15px
+		font-weight: 300
+		margin-bottom: 45px
+
+		&::placeholder
+			color: inherit
+
+	&__textarea
+		resize: none
+
+	&__submit-button
+		width: 100%
+
+	&__consent-wrap
+		margin-top: 35px
+		opacity: 0.3
+		text-align: center
+
+		.wpcf7-acceptance 
+	
+			label
+
+				input
+					display: none
+
+					&:checked + span::before
+						background-image: url('../img/check.png')
+						background-position: center
+						background-repeat: no-repeat
+
+				span
+					display: inline-flex
+					align-items: center
+					cursor: pointer
+					font-size: 12px
+					color: #f4d390
+
+					&::before
+						content: ''
+						width: 15px
+						height: 15px
+						border: 1px solid #524834
+						margin-right: 8px
+						flex-shrink: 0
+
++media-breakpoint-down(sm)
+	.form
+
+		&::before
+			display: none

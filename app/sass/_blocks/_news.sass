@@ -1,0 +1,97 @@
+.news
+	padding-top: 48px
+	padding-bottom: 50px
+	position: relative
+	overflow: hidden
+
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: -27px
+		min-width: 100%
+		width: 1920px
+		height: 1912px
+		transform: translate(-50%,0)
+		background-image: url('../img/news-bg.png')
+		background-size: 100% 100%
+		z-index: -1
+
+	&__row
+		margin-top: 18px
+
+	&__col
+		margin-top: 27px
+
+	&__item
+		background-image: linear-gradient(190deg, #171717, #0c0c0c)
+		box-shadow: 0 0 25px #000
+		padding: 28px 35px 40px
+		height: 100%
+
+	&__img-box
+		display: block
+		background-image: linear-gradient(190deg, #171717, #0c0c0c)
+		box-shadow: 0 0 25px #000
+		padding: 17px 20px
+		overflow: hidden
+
+		img
+			transition: opacity 0.3s
+
+		&:hover
+
+			img
+				opacity: 0.5
+
+	&__item-title
+		margin-top: 35px
+		max-width: 400px
+		font-size: 24px
+		line-height: normal
+
+	&__date
+		margin-top: 20px
+		font-size: 14px
+		line-height: normal
+		font-weight: 300
+		color: #f4d390
+		display: flex
+		align-items: center
+
+		&::after
+			content: ''
+			flex-grow: 1
+			margin-left: 25px
+			height: 2px
+			background-color: #020102
+
+	&__desc
+		font-size: 14px
+		line-height: 24px
+		margin-top: 24px
+
+	&__pagination
+		margin-top: 50px
+
++media-breakpoint-down(lg)
+	.news
+
+		&::before
+			display: none
+
++media-breakpoint-down(sm)
+	.news
+
+		&__row
+			margin-top: 10px
+
+		&__col
+			margin-top: 15px
+
+		&__item
+			padding: 20px
+
+		&__item-title
+			font-size: 20px
+			margin-top: 25px

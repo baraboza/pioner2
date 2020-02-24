@@ -1,0 +1,197 @@
+.faq
+	margin-top: 90px
+	margin-bottom: 50px
+	position: relative
+
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		transform: translate(-50%,0)
+		background-size: 100% 100%
+		min-width: 100%
+		z-index: -1
+		width: 1920px
+		height: 1067px
+		top: -189px
+		background-image: url('../img/faq-bg.png')
+
+	&__row
+		margin-top: 40px
+		display: flex
+		align-items: flex-start
+
+	&__list
+		flex-grow: 1
+		width: 100%
+
+	&__item, &__form
+		background-image: linear-gradient(190deg, #171717, #0c0c0c)
+		box-shadow: 0 0 25px #000
+
+	&__item
+		margin-top: 10px
+
+		&:first-child
+			margin-top: 0
+
+	&__question
+		display: flex
+		align-items: center
+		justify-content: space-between
+		min-height: 100px
+		padding: 20px 20px 20px 35px
+		font-size: 17px
+		line-height: 24px
+
+	&__question-button
+		margin-left: 20px
+		width: 30px
+		height: 30px
+		border-radius: 50%
+		border: 1px solid #b19159
+		background: none
+		color: #f4d390
+		font-size: 18px
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 0
+		transition: 0.3s
+		flex-shrink: 0
+
+		span
+			margin-top: 3px
+
+		&:hover
+			box-shadow: 0 0 15px #815f2e
+		
+		&.active
+			transform: rotate(45deg)
+
+	&__answer
+		border-top: 1px solid #0c0c0c
+		padding: 32px 45px 45px
+		font-size: 14px
+		line-height: 24px
+		display: none
+
+	&__form
+		flex: 0 0 360px
+		margin-left: 25px
+		padding: 45px 35px 30px
+		position: relative
+
+		&::before
+			content: ''
+			position: absolute
+			top: -35px
+			right: -30px
+			width: 303px
+			height: 488px
+			border: 1px solid
+			border-image: linear-gradient(to bottom, #815f2e, #f2d18e) 1
+			z-index: -1
+
+	&__form-title
+		text-transform: uppercase
+		letter-spacing: 0.075em
+		text-align: center
+		padding-bottom: 38px
+		position: relative
+		margin-bottom: 40px
+
+		&::after
+			content: ''
+			position: absolute
+			bottom: 0
+			width: 100%
+			left: 0
+			height: 1px
+			background: linear-gradient(to right, #0c0c0c, #ffde9a, #0c0c0c)
+
+	&__input, &__textarea
+		line-height: 1
+		padding: 0 3px 15px
+		background: none
+		border: none
+		border-bottom: 1px solid #584e39
+		width: 100%
+		font-size: 15px
+		font-weight: 300
+		margin-bottom: 45px
+
+		&::placeholder
+			color: inherit
+
+	&__textarea
+		resize: none
+
+	&__submit-button
+		width: 100%
+
+	&__consent-wrap
+		margin-top: 35px
+		opacity: 0.3
+		text-align: center
+
+		.wpcf7-acceptance 
+	
+			label
+
+				input
+					display: none
+
+					&:checked + span::before
+						background-image: url('../img/check.png')
+						background-position: center
+						background-repeat: no-repeat
+
+				span
+					display: inline-flex
+					align-items: center
+					cursor: pointer
+					font-size: 12px
+					color: #f4d390
+
+					&::before
+						content: ''
+						width: 15px
+						height: 15px
+						border: 1px solid #524834
+						margin-right: 8px
+						flex-shrink: 0
+
+.faq--page
+	margin-top: 45px
+
+	&::before
+		height: 1026px
+		top: -78px
+		background-image: url('../img/faq-page.png')
+
++media-breakpoint-down(lg)
+	.faq
+		
+		&::before
+			display: none
+
++media-breakpoint-down(sm)
+	.faq
+
+		&__row
+			flex-direction: column
+
+		&__question
+			padding: 15px 15px 15px 25px
+			min-height: 0
+
+		&__answer
+			padding: 15px 15px 15px 25px
+
+		&__form
+			margin-left: 0
+			margin-top: 30px
+
+			&::before
+				display: none
