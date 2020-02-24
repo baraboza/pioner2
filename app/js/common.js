@@ -14,6 +14,7 @@ setBreakpoint();
 $(window).resize(setBreakpoint);
 
 $('.header__toggle').click(function() {
+	$(this).toggleClass('active');
 	$('.header__list').slideToggle();
 });
 

@@ -117,9 +117,28 @@
 			margin-top: 10px
 
 		&__toggle
-			display: block
-			font-size: 24px
+			display: flex
+			background: none
+			border: none
 			cursor: pointer
+			flex-direction: column
+			justify-content: space-between
+			height: 17px
+			padding: 0
+			outline: none !important
+			span
+				width: 32px
+				height: 3px
+				background-color: #fff9ec
+				transition: 0.3s
+				transform-origin: 81% 50%
+			&.active
+				span:first-of-type
+					transform: rotate(-45deg)
+				span:nth-of-type(2)
+					opacity: 0
+				span:last-of-type
+					transform: rotate(45deg)
 
 +media-breakpoint-down(xs)
 	.header
