@@ -76,6 +76,12 @@ $('.reviews__list').on('afterChange', reviewsUpdateClasses);
 
 
 $('.faq__question-button').click(function() {
+	if (!$(this).hasClass('active')) {
+		$('.faq__question-button').removeClass('active');
+		$('.faq__item').removeClass('active');
+		$('.faq__answer').slideUp();
+	}
+
 	$(this).toggleClass('active');
 	$(this).parents('.faq__item').toggleClass('active');
 	$(this).parents('.faq__item').find('.faq__answer').slideToggle();
@@ -105,6 +111,10 @@ $(document).ready(function($) {
 		var selectTab = $(this).find('a').attr("href");
 
 		$(selectTab).fadeIn();
+
+		$('html, body').animate({
+			scrollTop: $(selectTab).offset().top
+		}, 1000);
 	});
 
 	$('.teachers__content').hide();
@@ -118,10 +128,44 @@ $(document).ready(function($) {
 		var selectTab = $(this).attr("href");
 
 		$(selectTab).fadeIn();
+
+		$('html, body').animate({
+			scrollTop: $( selectTab ).offset().top
+		}, 1000);
+	});
+
+
+	$('.learn-info__program-content').hide();
+	$('.learn-info__program-content').eq(0).show();
+	$('.learn-info__program-item a').click(function(event) {
+		event.preventDefault();
+		$('.learn-info__program-item a').removeClass('active');
+		$(this).addClass('active');
+		$('.learn-info__program-content').hide();
+
+		var selectTab = $(this).attr("href");
+
+		$(selectTab).fadeIn();
+
+		$('html, body').animate({
+			scrollTop: $( selectTab ).offset().top
+		}, 1000);
 	});
 });
 
+$('.js-scroll-link').click(function(e) {
+	e.preventDefault();
+	$('html, body').animate({
+		scrollTop: $( $(this).attr('href') ).offset().top
+	}, 1000);
+});
+
 $('.learn-info__theory-toggle').click(function() {
+	if (!$(this).hasClass('active')) {
+		$('.learn-info__theory-toggle').removeClass('active');
+		$('.learn-info__theory-desc').slideUp();
+	}
+
 	$(this).toggleClass('active');
 	$(this).parents('.learn-info__theory-item').find('.learn-info__theory-desc').slideToggle();
 });
@@ -150,7 +194,5 @@ $('.teachers__list').slick({
 });
 
 $('.fancybox').fancybox();
-
-
 	
 });
